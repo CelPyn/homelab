@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: aws-creds
+  namespace: kube-system
+spec:
+  encryptedData:
+    hosted_zone_id: AgBWp3KYqiVrRN/ZKR7gT4IDpK20aMqrVOPbY+Y7i/bzAT5wYU1QGZWZpMLDDG7tizYpsL8rkoRxETVeplRO540B0t7rnnH7KdAOEZkNZjDr2AGEpMLHnSy3uepDhT7wDpc5lfdV8rRVNFhbvU72AbpX509s3R/klM3gCjCURMVXqrmg1fFXPUAfx6LFDevy6cmtpxeCyo6xPnpzGWEtTFR7eCh+F41kPwgg7uBr8SWFfAJjXrkfS9MF9X+Ti4s3nhSa5eblS+oKon9UC8Xh/MA9p8cH9BVYvcG5dVay0HWk7hWMWsjjyA3aOMmVNqFuLYwOWdiVSg1dQgzY+H+abtv4Uz0SQX7Ft0bCFVsqIkrHK3kRQg6p6i5qkA7iO7RQexZ2wD0mxxbYMpPygXNhQOVfzNGB3DYSKFX/7yfAMc95/le39Zxf2B3iJ1EQw4CR2kAeE0AH+OrKjilNmKl2qTedaEuDJzyC/ao8ryyDB2Jz/+eCCD/Flpbr7b+G16+GSFjgC8JHPpJDKgL9NwXhOyO2aIQKGteN+8QPz1RW8BFYa8WWuXsgan5/kYPZHjvdf8q/6Y1Fp0oLHh7EyqrfQyz9P2ZPeGR3ZhteiVuA8aw/l0d3N0yBh9BSwK72XwApOonS5Z1SGPvuyGfoEpirm3Zl0E3Hp0bBFFkTDYjXrni3up7uFiuinlEu35mpQ1NO1/7ZT5Blh2P7ZE1BBLGY43M2yCa1SQ==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: aws-creds
+      namespace: kube-system
