@@ -27,6 +27,9 @@ spec:
       cm:
         admin.enabled: false
         accounts.cel: apiKey, login
+      rbac:
+        policy.csv: |
+          g, cel, role:admin
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
