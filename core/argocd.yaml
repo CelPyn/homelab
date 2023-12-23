@@ -40,7 +40,7 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-    - host: "argo.pynenborg.local"
+    - host: "argo.home.pynenborg.com"
       http:
         paths:
           - pathType: Prefix
