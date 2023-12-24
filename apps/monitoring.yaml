@@ -35,3 +35,4 @@ spec:
       allowEmpty: false
     syncOptions:
       - CreateNamespace=true
+      - Replace=true
