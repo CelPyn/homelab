@@ -6,6 +6,7 @@ metadata:
     defaultVolumeType: hostPath
 provisioner: rancher.io/local-path
 parameters:
+  # Be sure to edit the config.json in local-path-config configmap to allow the following path
   nodePath: /mnt
 volumeBindingMode: WaitForFirstConsumer
 reclaimPolicy: Retain

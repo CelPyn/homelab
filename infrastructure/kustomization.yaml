@@ -6,9 +6,3 @@ commonLabels:
   app.kubernetes.io/managed-by: argocd
 resources:
   - hdd-storage.yaml
-patches:
-  - target:
-      version: v1
-      kind: ConfigMap
-      name: local-path-config
-    path: patches/local-path-config.yaml
