@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jellyfin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jellyfin
+  template:
+    metadata:
+      labels:
+        app: jellyfin
+    spec:
+      containers:
+        - name: jellyfin
+          image: jellyfin/jellyfin
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 4Gi
+              cpu: 1000m
+          securityContext:
+            privileged: true
+          ports:
+            - containerPort: 8096
+              name: http-tcp
+              protocol: TCP
+            - containerPort: 8920
+              name: https-tcp
+              protocol: TCP
+          stdin: true
+          tty: true
+          env:
+            - name: JELLYFIN_PublishedServerUrl
+              value: netflix.home.pynenborg.com
+            - name: TZ
+              value: Europe/Brussels

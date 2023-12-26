@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: local-path-config
+data:
+  config.json: |-
+    {
+      "nodePathMap":[
+        {
+          "node":"DEFAULT_PATH_FOR_NON_LISTED_NODES",
+          "paths":["/var/lib/rancher/k3s/storage"]
+        },
+        {
+          "node":"leviathan",
+          "paths":["/mnt"]
+        }
+      ]
+    }
