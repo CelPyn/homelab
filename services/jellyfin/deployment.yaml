@@ -37,3 +37,19 @@ spec:
               value: netflix.home.pynenborg.com
             - name: TZ
               value: Europe/Brussels
+          volumeMounts:
+            - name: jellyfin-config
+              mountPath: /config
+            - name: jellyfin-media
+              mountPath: /data
+      volumes:
+        - name: jellyfin-config
+          persistentVolumeClaim:
+            claimName: jellyfin-config-pvc
+          hostPath:
+            path: /mnt/jellyfin/config
+        - name: jellyfin-media
+          persistentVolumeClaim:
+            claimName: jellyfin-media-pvc
+          hostPath:
+            path: /mnt/jellyfin/data
