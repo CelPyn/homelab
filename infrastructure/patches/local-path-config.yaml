@@ -1,9 +1,6 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: local-path-config
-data:
-  config.json: |-
+- op: replace
+  path: /data/config.json
+  value: |-
     {
       "nodePathMap":[
         {
