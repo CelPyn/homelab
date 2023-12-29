@@ -5,8 +5,8 @@ metadata:
   name: jellyfin
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    traefik.ingress.kubernetes.io/router.entrypoints: web
-    traefik.ingress.kubernetes.io/router.middlewares: jellyfin-redirect@kubernetescrd
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
 spec:
   rules:
     - host: "netflix.home.pynenborg.com"
