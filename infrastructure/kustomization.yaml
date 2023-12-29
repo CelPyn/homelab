@@ -6,3 +6,5 @@ commonLabels:
   app.kubernetes.io/managed-by: argocd
 resources:
   - hdd-storage.yaml
+  - aws-creds.sealed.yaml
+  - cluster-issuer.yaml
