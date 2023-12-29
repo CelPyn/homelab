@@ -4,6 +4,7 @@ kind: Ingress
 metadata:
   name: jellyfin
   annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
@@ -17,3 +18,7 @@ spec:
                 name: jellyfin
                 port:
                   number: 80
+  tls:
+    - hosts:
+        - "netflix.home.pynenborg.com"
+      secretName: jellyfin-cert
