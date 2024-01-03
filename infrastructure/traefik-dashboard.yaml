@@ -17,7 +17,7 @@ metadata:
     gethomepage.dev/pod-selector: ""
 spec:
   entryPoints:
-    - web
+    - websecure
   routes:
     - match: Host(`traefik.home.pynenborg.com`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
