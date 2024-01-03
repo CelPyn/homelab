@@ -14,6 +14,7 @@ metadata:
     gethomepage.dev/name: Jellyfin
     gethomepage.dev/widget.type: "jellyfin"
     gethomepage.dev/widget.url: "https://netflix.home.pynenborg.com"
+    gethomepage.dev/widget.key: "6450afab16e94ee5a69c4687033ab675"
     gethomepage.dev/pod-selector: ""
 spec:
   rules:
