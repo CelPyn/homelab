@@ -31,12 +31,12 @@ data:
             - icon: youtube.svg
               abbr: YT
               href: https://youtube.com/
-    - Monitoring & Management:
+  services.yaml: |
+    - Kubernetes:
         - ArgoCD:
             - icon: argocd.png
               href: https://argo.home.pynenborg.com/
               description: ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
-  services.yaml: ""
   widgets.yaml: |
     - kubernetes:
         cluster:
