@@ -7,8 +7,6 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
   labels:
     name: core
-  annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: argo-cd
 spec:
   project: default
   source:
