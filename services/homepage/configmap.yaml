@@ -30,12 +30,24 @@ data:
             - icon: youtube.svg
               abbr: YT
               href: https://youtube.com/
-  services.yaml: |
     - Monitoring & Management:
         - ArgoCD:
             - icon: argocd.png
               href: https://argo.home.pynenborg.com/
               description: ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
+  services.yaml: |
+    - Media:
+        - Jellyfin:
+            - icon: jellyfin.png
+              href: https://netflix.home.pynenborg.com/
+              description: Jellyfin is the volunteer-built media solution that puts you in control of your media.
+              widget:
+                type: jellyfin
+                url: https://netflix.home.pynenborg.com
+                key: 6450afab16e94ee5a69c4687033ab675
+                enableBlocks: true # optional, defaults to false
+                enableNowPlaying: true # optional, defaults to true
+
   widgets.yaml: |
     - kubernetes:
         cluster:
