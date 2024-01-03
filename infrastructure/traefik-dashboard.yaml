@@ -6,7 +6,6 @@ metadata:
   annotations:
     gethomepage.dev/href: "http://traefik.home.pynenborg.com/dashboard/#/"
     gethomepage.dev/enabled: "true"
-    gethomepage.dev/group: Media
     gethomepage.dev/icon: traefik.png
     gethomepage.dev/app: traefik # optional, may be needed if app.kubernetes.io/name != ingress metadata.name
     gethomepage.dev/name: Traefik
