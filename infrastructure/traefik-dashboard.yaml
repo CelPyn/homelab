@@ -7,6 +7,7 @@ metadata:
     gethomepage.dev/href: "http://traefik.home.pynenborg.com/dashboard/#/"
     gethomepage.dev/enabled: "true"
     gethomepage.dev/group: Kubernetes
+    gethomepage.dev/description: Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.
     gethomepage.dev/icon: traefik.png
     gethomepage.dev/app: traefik # optional, may be needed if app.kubernetes.io/name != ingress metadata.name
     gethomepage.dev/name: Traefik
