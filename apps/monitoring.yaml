@@ -20,20 +20,26 @@ spec:
           ingress:
             enabled: true
             annotations:
-              ingress.kubernetes.io/ssl-redirect: "false"
+              cert-manager.io/cluster-issuer: letsencrypt-prod
+              traefik.ingress.kubernetes.io/router.entrypoints: websecure
+              traefik.ingress.kubernetes.io/router.tls: "true"
               gethomepage.dev/enabled: "true"
               gethomepage.dev/description: Grafana is the open source analytics & monitoring solution for every database.
               gethomepage.dev/group: Kubernetes
               gethomepage.dev/icon: grafana.png
               gethomepage.dev/name: Grafana
               gethomepage.dev/widget.type: "grafana"
-              gethomepage.dev/widget.url: "http://grafana.home.pynenborg.com"
+              gethomepage.dev/widget.url: "https://grafana.home.pynenborg.com"
               gethomepage.dev/widget.fields: "dashboards, datasources, totalalerts, alertstriggered"
               gethomepage.dev/widget.username: "admin"
               gethomepage.dev/widget.password: "prom-operator"
               gethomepage.dev/pod-selector: ""
             hosts:
               - grafana.home.pynenborg.com
+            tls:
+              - hosts:
+                  - "grafana.home.pynenborg.com"
+                secretName: grafana-cert
 
   destination:
     server: https://kubernetes.default.svc
