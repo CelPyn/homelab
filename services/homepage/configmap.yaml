@@ -34,9 +34,9 @@ data:
   services.yaml: |
     - Kubernetes:
         - ArgoCD:
-            - icon: argocd.png
-              href: https://argo.home.pynenborg.com/
-              description: ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
+            icon: argocd.png
+            href: https://argo.home.pynenborg.com/
+            description: ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
   widgets.yaml: |
     - kubernetes:
         cluster:
