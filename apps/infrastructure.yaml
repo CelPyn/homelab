@@ -7,8 +7,6 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
   labels:
     name: core
-  annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "pynenborg_home_notifications"
 spec:
   project: default
   source:
