@@ -39,8 +39,7 @@ rules:
       - list
   - apiGroups:
       - apiextensions.k8s.io
-    resources:
-      - customresourcedefinitions/status
+    resources: ["*"]
     verbs:
       - get
       - list
