@@ -27,12 +27,14 @@ data:
               description: The front page of the internet
     - Entertainment:
         - YouTube:
-            - abbr: YT
+            - icon: youtube.svg
+              abbr: YT
               href: https://youtube.com/
   services.yaml: |
     - Monitoring & Management:
         - ArgoCD:
-            - href: https://argo.home.pynenborg.com/
+            - icon: argocd.png
+              href: https://argo.home.pynenborg.com/
               description: ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
   widgets.yaml: |
     - kubernetes:
