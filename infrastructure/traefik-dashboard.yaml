@@ -3,6 +3,17 @@ kind: IngressRoute
 metadata:
   name: traefik-dashboard
   namespace: kube-system
+  annotations:
+    gethomepage.dev/href: "http://traefik.home.pynenborg.com/dashboard/#/"
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: traefik.png
+    gethomepage.dev/app: traefik # optional, may be needed if app.kubernetes.io/name != ingress metadata.name
+    gethomepage.dev/name: Traefik
+    gethomepage.dev/widget.type: "traefik"
+    gethomepage.dev/widget.url: "http://traefik.home.pynenborg.com"
+    gethomepage.dev/widget.fields: "routers, services, middleware"
+    gethomepage.dev/pod-selector: ""
 spec:
   entryPoints:
     - web
