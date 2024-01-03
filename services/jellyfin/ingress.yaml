@@ -7,6 +7,14 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls: "true"
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Jellyfin is the volunteer-built media solution that puts you in control of your media.
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: jellyfin.png
+    gethomepage.dev/name: Jellyfin
+    gethomepage.dev/widget.type: "jellyfin"
+    gethomepage.dev/widget.url: "https://netflix.home.pynenborg.com"
+    gethomepage.dev/pod-selector: ""
 spec:
   rules:
     - host: "netflix.home.pynenborg.com"
