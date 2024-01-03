@@ -7,3 +7,4 @@ resources:
   - hdd-storage.yaml
   - aws-creds.sealed.yaml
   - cluster-issuer.yaml
+  - traefik-dashboard.yaml
