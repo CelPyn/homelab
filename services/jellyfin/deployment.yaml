@@ -34,7 +34,7 @@ spec:
           tty: true
           env:
             - name: JELLYFIN_PublishedServerUrl
-              value: netflix.home.pynenborg.com
+              value: jellyfin.home.pynenborg.com
             - name: TZ
               value: Europe/Brussels
           volumeMounts:
